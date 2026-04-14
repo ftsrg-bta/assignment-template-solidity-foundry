@@ -1,14 +1,19 @@
-name: CI
+---
+name: Smart Contract CI
+
 
 permissions: {}
+
 
 on:
   push:
   pull_request:
   workflow_dispatch:
 
+
 env:
   FOUNDRY_PROFILE: ci
+
 
 jobs:
   check:
@@ -21,18 +26,9 @@ jobs:
         with:
           persist-credentials: false
           submodules: recursive
-
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
-
-      - name: Show Forge version
-        run: forge --version
-
-      - name: Run Forge fmt
-        run: forge fmt --check
-
-      - name: Run Forge build
-        run: forge build --sizes
-
-      - name: Run Forge tests
-        run: forge test -vvv
+      - run: forge --version
+      - run: forge fmt --check
+      - run: forge build --sizes
+      - run: forge test -vvv
