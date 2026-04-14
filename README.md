@@ -2,6 +2,10 @@
 
 [![Smart Contract CI](https://github.com/ftsrg-bta/assignment-template-solidity-foundry/actions/workflows/test.yml/badge.svg)](https://github.com/ftsrg-bta/assignment-template-solidity-foundry/actions/workflows/test.yml)
 
+> [!IMPORTANT]
+> The canonical description of the assignment and its acceptance criteria are maintained at the **[ftsrg-bta assignments wiki](https://github.com/ftsrg-bta/assignments/wiki)**.
+> Be sure to consult it before finalizing your submission.
+
 > [!NOTE]
 > The implementation language for this assignment is **Solidity** (using the [Foundry](https://book.getfoundry.sh/) toolchain)
 
