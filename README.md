@@ -1,66 +1,21 @@
-## Foundry
+# Solidity/Foundry assignment: <!-- TODO: assignment title -->
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+[![Chaincode CI](https://github.com/ftsrg-bta/assignment-template-solidity-foundry/actions/workflows/test.yml/badge.svg)](https://github.com/ftsrg-bta/assignment-template-solidity-foundry/actions/workflows/test.yml)
 
-Foundry consists of:
+> [!NOTE]
+> The implementation language for this assignment is **Solidity** (using the [Foundry](https://book.getfoundry.sh/) toolchain)
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+
+## Repository structure
+
+* Smart contract implementation: `src/` directory
+* Deployment scripts: `script/` directory
+* Tests: `test/` directory
+
 
 ## Documentation
 
-https://book.getfoundry.sh/
+**Place your assignment documentation in the [`docs/`](docs/) subdirectory.**
+Put a link to the top-level/index file here once you have one.
 
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+For information about the Foundry toolchain and how to build, test, and deploy contracts, see [`docs/foundry.md`](docs/foundry.md).
