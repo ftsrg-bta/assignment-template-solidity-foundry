@@ -16,6 +16,12 @@
 * Deployment scripts: `script/` directory
 * Tests: `test/` directory
 
+ ## Specification
+
+
+> [!IMPORTANT]
+> **You can find the assignment specification in [`specification.md`](specification.md).**
+
 
 ## Documentation
 
